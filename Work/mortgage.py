@@ -17,7 +17,7 @@ while principle > 0:
     else : extra_payment = 1000
     principle = principle * (1+rate/12) - payment - extra_payment
     total_paid = total_paid + payment + extra_payment
-    print(month, total_paid, extra_payment)
+    print(f'Month {month}, Total Paid {total_paid:0.2f}, Extra Paid {extra_payment:0.2f}')
     month = month + 1
 
 print('Total paid', total_paid)
